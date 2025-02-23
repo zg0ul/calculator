@@ -1,0 +1,85 @@
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: transparent;
+}
+
+.calculator {
+    background-color: #F69FC5;
+    border-radius: 20px;
+    border: 2px solid #492222;
+    padding: 20px;
+    box-shadow: 6px 6px 0px #EB5284, 6px 6px 0px 2px #492222;
+        
+    width: 320px;
+}
+
+.display {
+    background-color: #ECFBFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 80px;
+    border: 2px solid #492222;
+    box-shadow: 0px 0px 0px 4px #EB5284, 0px 0px 0px 6px #492222; 
+}
+
+.previous-operand {
+    color: #75604C;
+    font-size: 16px;
+    min-height: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.current-operand {
+    color: #642904;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.key {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #4a2f1b;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: 2px solid #492222;
+    background-color: #CEEFFF; 
+    box-shadow: 2px 2px 0px #54AECE, 3px 3px 0px 1px #492222 ; /* Subtle layered shadow */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.key:active {
+    box-shadow: 0px 0px 0px #54AECE,
+        0px 0px 0px #492222;
+    transform: translate(2px, 2px);
+}
+
+.key.zero {
+    grid-column: span 2;
+}
+
+.key:hover {
+    filter: brightness(0.8);
+}
+
+.key {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
